@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuzmanConstructions</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="#" alt=""></div>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <p>Search</p>
+            <input type="text" name="search" id="search">
+            <div class="search-icon">
+                <ion-icon name="search-outline"></ion-icon>
+            </div>
+        </div>
+    </header>
+    
+    <section class="content">
+        <div class="left-section">
+            <h2>From Guzman General Construction and PaintRe</h2>
+            <h1>Create Spaces That Matter</h1>
+            <div class="shape"></div>
+            <p>At Guzman General Construction, you can find and build anything your imagination wants to turn into reality. We create custom doors, terraces, painting, and many other jobs that other companies wouldn’t take on because they only focus on quick work. Tell us what you want to build or repair. Thank you, and let’s stay in touch!</p>
+            <button class="explore-btn">Explore More</button>
+            <div class="social-media-icons">
+                <ion-icon class="icons" name="logo-facebook"></ion-icon>
+                <ion-icon class="icons" name="logo-instagram"></ion-icon>
+                <ion-icon class="icons" name="logo-youtube"></ion-icon>
+            </div>
+        </div>
+        <div class="right-section">
+            <!-- Espacio reservado para futuras imágenes o contenido -->
+        </div>
+    </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.createElement("button");
+            menuToggle.classList.add("menu-toggle");
+            menuToggle.innerHTML = "☰"; // Ícono de hamburguesa
+            document.querySelector("header").insertBefore(menuToggle, document.querySelector(".menu"));
+    
+            const menu = document.querySelector(".menu");
+    
+            menuToggle.addEventListener("click", function () {
+                menu.classList.toggle("active");
+            });
+        });
+    </script>
+   <section class="latest-projects">
+    <h2>Latest Projects</h2>
+    <div class="cards-container">
+        <div class="card">
+            <img src="images/imgPrincipal.jpg" alt="New Homes">
+            <p>New Homes</p>
+        </div>
+        <div class="card">
+            <img src="images/paiting19.jpeg" alt="Whole Home Remodeling">
+            <p>Whole Home Remodeling</p>
+        </div>
+        <div class="card">
+            <img src="images/paiting17.jpeg" alt="Additions">
+            <p>Additions</p>
+        </div>
+        <div class="card">
+            <img src="images/upwork.jpeg" alt="Kitchens">
+            <p>Stairs</p>
+        </div>
+        <div class="card">
+            <img src="images/framing15.jpeg" alt="Bathrooms">
+            <p>Framing</p>
+        </div>
+    </div>
+    <button class="view-portfolio">View Portfolio</button>
+</section>
+<section class="home-tours">
+    <h2>WATCH HOME TOURS</h2>
+    <div class="videos-container">
+        <div class="video-card">
+            <iframe width="100%" height="200" 
+    src="https://www.youtube.com/embed/ANdZYLWAmUA" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+</iframe>
+            <p>Relaxing Jazz Music</p>
+        </div>
+        <div class="video-card">
+            <iframe width="100%" height="200" src="https://www.youtube.com/embed/5_hdGgQS1jQ" frameborder="0" allowfullscreen></iframe>
+            <p>Nature Relaxation Film</p>
+        </div>
+        <div class="video-card">
+            <iframe width="100%" height="200" src="https://www.youtube.com/embed/ktvTqknDobU" frameborder="0" allowfullscreen></iframe>
+            <p>Coldplay - Paradise</p>
+        </div>
+    </div>
+    <button class="view-all-videos">SEE ALL VIDEOS</button>
+</section>
+
+
+
+</body>
+</html>

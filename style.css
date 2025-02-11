@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* General Reset */
 * {
     font-family: 'Poppins', sans-serif;
@@ -11,7 +13,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #f9f9f9;
+    background-color: #d9e7f5;
+  
 }
 
 /* Header Styles */
@@ -437,3 +440,234 @@ header {
         padding: 8px 16px;
     }
 }
+.testimoniales {
+    background: linear-gradient(to right, #60bcea, #7c83d0); /* Degradado personalizado */
+    padding: 50px 0;
+}
+
+section .heading{
+    display: inline-block;
+    position: relative;
+    color: #3b7cf5;
+    font-size: 4vw;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    font-weight: 800;
+}
+section .heading b{
+    color: #fff;
+}
+.wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.wrapper .container{
+    position: relative;
+    width: 350px;
+    color: #afcaf1;
+    background: #babbde;
+    margin: 40px 10px;
+    padding: 30px 20px;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+.wrapper .container .profile{
+    position: absolute;
+    left:50% ;
+    transform: translateX(-50%);
+    top: -10%;
+    width: 100%;
+    display: block;
+}
+.wrapper .container .profile .imgBox{
+    position: relative;
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    border: 8px solid;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.wrapper .container .profile .imgBox img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: 0.3s ease;
+}
+.wrapper .container .profile .imgBox:hover img{
+    filter: saturate(140%);
+    transform: scale(0.95);
+}
+.wrapper .container .profile h2{
+    padding: 5px 0;
+    text-transform: capitalize;
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.wrapper .container p{
+    margin-top: 50px;
+    color: #fff;
+    padding: 0 8px;
+    font-size: 15px;
+    opacity: 0.8;
+}
+.wrapper .container .left{
+    font-size: 30px;
+    display: block;
+    text-align: left;
+    color: #3b7cf5;
+}
+.wrapper .container .right{
+    font-size: 30px;
+    display: block;
+    text-align: right;
+    color: #3b7cf5;
+}
+.wrapper .container .social{
+    width: 100%;
+    
+}
+.wrapper .container .social i{
+    font-size: 1.2rem;
+    color: #fff;
+    padding: 8px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 4px;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.5);
+}
+.wrapper .container .social i:hover{
+ background: #3b7cf5;
+}
+.add-testimonial-btn {
+    display: block; /* Asegura que el botón se comporte como un bloque */
+    margin: 10px auto; /* Centra el botón horizontalmente */
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.add-testimonial-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para el modal */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenido del modal */
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    position: relative;
+}
+
+/* Botón de cerrar */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+/* ====== ESTILOS PARA EL MODAL ====== */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ====== ESTILOS DEL CONTENIDO DEL MODAL ====== */
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+/* ====== BOTÓN DE CERRAR ====== */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #555;
+}
+
+.close:hover {
+    color: red;
+}
+
+/* ====== ESTILOS DE LOS INPUTS Y TEXTAREA ====== */
+.modal-content input,
+.modal-content textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* ====== ESTILOS DEL TEXTAREA ====== */
+.modal-content textarea {
+    height: 100px;
+    resize: none; /* Evita que el usuario lo redimensione */
+}
+
+/* ====== BOTÓN GUARDAR ====== */
+.modal-content button {
+    background-color: #769fd4;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    transition: background 0.3s;
+}
+
+.modal-content button:hover {
+    background-color: #7987d5;
+}
+

@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GuzmanConstructions</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="style.css">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -86,7 +89,7 @@
     <button class="view-portfolio">View Portfolio</button>
 </section>
 <section class="home-tours">
-    <h2>WATCH HOME TOURS</h2>
+    <h2>WATCH OUR JOB</h2>
     <div class="videos-container">
         <div class="video-card">
             <iframe width="100%" height="200" 
@@ -95,21 +98,83 @@
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
     allowfullscreen>
 </iframe>
-            <p>Relaxing Jazz Music</p>
+            <p>New Construction</p>
         </div>
         <div class="video-card">
-            <iframe width="100%" height="200" src="https://www.youtube.com/embed/5_hdGgQS1jQ" frameborder="0" allowfullscreen></iframe>
-            <p>Nature Relaxation Film</p>
+            <iframe width="100%" height="200" src="https://www.youtube.com/embed/aEhcoEbcFmA" frameborder="0" allowfullscreen></iframe>
+            <p>Remodeling Old Stairs</p>
         </div>
         <div class="video-card">
-            <iframe width="100%" height="200" src="https://www.youtube.com/embed/ktvTqknDobU" frameborder="0" allowfullscreen></iframe>
+            <iframe width="100%" height="200" src="https://www.youtube.com/embed/6dTy46IZgaM" frameborder="0" allowfullscreen></iframe>
             <p>Coldplay - Paradise</p>
         </div>
     </div>
     <button class="view-all-videos">SEE ALL VIDEOS</button>
 </section>
+<section class="testimoniales">
+    <div class="heading">
+        <b>Our</b>Testimonials </div>
+        <div class="wrapper">
+            <div class="container">
+                <div class="profile">
+                    <div class="imgBox">
+                        <img src="images/icon1.png" alt="">
+                    </div>
+                    <h2>Person 1</h2>
+                </div>
+                <p><span class="fa fa-quote-left left"></span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad, accusantium? Eius, alias molestiae! Expedita quis officiis illum corporis quibusdam libero.<span class="fa fa-quote-right right"></span></p>
+           <div class="social">
+             <i class="fab fa-twitter"></i>
+             <i class="fab fa-youtube"></i>
+             <i class="fab fa-instagram"></i>
+           </div>
+           
+            </div>
+            <div class="container">
+                <div class="profile">
+                    <div class="imgBox">
+                        <img src="images/icon2.png" alt="">
+                    </div>
+                    <h2>Person 1</h2>
+                </div>
+                <p><span class="fa fa-quote-left left"></span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad, accusantium? Eius, alias molestiae! Expedita quis officiis illum corporis quibusdam libero.<span class="fa fa-quote-right right"></span></p>
+           <div class="social">
+             <i class="fab fa-twitter"></i>
+             <i class="fab fa-youtube"></i>
+             <i class="fab fa-instagram"></i>
+           </div>
+           
+            </div>
+            <div class="container">
+                <div class="profile">
+                    <div class="imgBox">
+                        <img src="images/icon3.png" alt="">
+                    </div>
+                    <h2>Person 1</h2>
+                </div>
+                <p><span class="fa fa-quote-left left"></span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad, accusantium? Eius, alias molestiae! Expedita quis officiis illum corporis quibusdam libero.<span class="fa fa-quote-right right"></span></p>
+           <div class="social">
+             <i class="fab fa-twitter"></i>
+             <i class="fab fa-youtube"></i>
+             <i class="fab fa-instagram"></i>
+           </div>
+           
+            </div>
+        </div>
+        <button class="add-testimonial-btn" onclick="showForm()">Add Testimonial</button>
+</section>
+<div id="testimonial-form" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeForm()">&times;</span>
+        <h2>Add Testimonial</h2>
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="text" id="image-url" placeholder="URL picture" required>
+        <textarea id="testimonial" placeholder="Write Your Testimonial..." required></textarea>
+        <button onclick="addTestimonial()">Guardar</button>
+    </div>
+</div>
 
-
+<script src="script.js"></script>
 
 </body>
 </html>

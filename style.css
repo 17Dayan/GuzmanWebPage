@@ -34,6 +34,7 @@ header {
     z-index: 100;
 }
 
+
 .logo img {
     width: 90px;
     border-radius: 5px;
@@ -43,6 +44,11 @@ header {
     display: flex;
     list-style: none;
     gap: 25px;
+    position: relative;
+}
+
+.menu ul li{
+    position: relative;
 }
 
 .menu ul li a {
@@ -54,12 +60,47 @@ header {
     font-weight: bold;
     padding: 10px 15px;
     border-radius: 8px;
+    display: block;
+}
+
+.menu ul li .submenu {
+    display: none;
+    position: absolute;
+    top: 100%; /* Coloca el submenú debajo del enlace */
+    left: 0;
+    background-color: white;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    min-width: 180px; /* Ajuste del tamaño */
+    padding: 10px 0;
+    border-radius: 8px;
+    z-index: 100;
+}
+
+.menu ul li .submenu li{
+    display: block;
+}
+.menu ul li .submenu li a {
+    color: #333;
+    padding: 10px 15px;
+    display: block;
+    transition: background 0.3s;
 }
 
 .menu ul li a:hover {
     background-color: #0077b6;
     color: #fff;
 }
+.menu ul li:hover .submenu {
+    display: block;
+}
+
+/* Efecto hover en los enlaces del submenú */
+.menu ul li .submenu li a:hover {
+    background-color: #0077b6;
+    color: white;
+    border-radius: 5px;
+}
+
 
 .search-bar {
     display: flex;
@@ -864,5 +905,70 @@ p {
     opacity: 0.8;
 }
 
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
 
+@media (min-width: 768px) {
+    .content-wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.text-section {
+    width: 100%;
+    max-width: 500px;
+    text-align: left;
+    padding: 20px;
+}
+
+.text-section h2 {
+    color: #fbbf24;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.text-section h1 {
+    color: #333;
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.text-section p {
+    color: #555;
+    font-size: 16px;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.slider-section {
+    width: 100%;
+    max-width: 600px;
+    overflow: hidden;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: #fff;
+}
+
+.swiper-pagination-bullet {
+    background-color: #fbbf24;
+}
 

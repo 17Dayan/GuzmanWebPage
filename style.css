@@ -21,7 +21,7 @@ body {
 header {
     display: flex;
     width: 100%; /* Abarca toda la pantalla */
-    height: 55px; /* Hacer la barra más delgada */
+    height: 80px; /* Hacer la barra más delgada */
     align-items: center;
     justify-content: space-between;
     border-radius: 0; /* Quitar bordes redondeados */
@@ -30,14 +30,16 @@ header {
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
     padding: 0 30px;
     position: fixed;
-    top: 20px;
+    top: 0;
     z-index: 100;
 }
 
 
 .logo img {
-    width: 90px;
-    border-radius: 5px;
+    height: 80px; /* Ajusta el tamaño del logo */
+    width: auto; /* Mantiene la proporción */
+    max-width: 100%; /* Evita que sea más grande que su contenedor */
+    object-fit: contain;
 }
 
 .menu ul {
@@ -970,5 +972,74 @@ p {
 
 .swiper-pagination-bullet {
     background-color: #fbbf24;
+}
+.about-us {
+    background-color: #8d9ecc;
+    padding: 80px 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 1200px;
+}
+
+.about-image {
+    flex: 1;
+    max-width: 500px;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.about-content {
+    flex: 1;
+    text-align: left;
+}
+
+.about-content h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.about-content p {
+    font-size: 1.2rem;
+    color: #1d1d21;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.animated-text {
+    opacity: 0; /* Ocultar antes de la animación */
+    transform: translateY(20px); /* Efecto de desplazamiento */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+[data-aos="fade-up"] {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
 }
 

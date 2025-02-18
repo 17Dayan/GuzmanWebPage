@@ -14,7 +14,7 @@
 <body>
     <header>
         <div class="logo">
-            <img src="#" alt="Logo">
+            <img src="images/logo.jpg" alt="Logo">
         </div>
         <nav class="menu">
             <ul>
@@ -22,13 +22,17 @@
                 <li>
                     <a href="#">Services +</a>
                     <ul class="submenu">
-                        <li><a href="#">Painting</a></li>
-                        <li><a href="#">Framing</a></li>
-                        <li><a href="#">Flooring</a></li>
+                        <li><a href="Painting.html">Painting</a></li>
+                        <li><a href="framing.html">Framing</a></li>
+                        <li><a href="flooring.html">Flooring</a></li>
                     </ul>
                 </li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+                <li>
+                    <a href="tel:+13105989036">
+                        <i class="fas fa-phone"></i> (310) 598-9036
+                    </a>
+                </li>
             </ul>
         </nav>
         
@@ -40,7 +44,56 @@
             </div>
         </div>
     </header>
+   
+    <div class="content-wrapper">
+        <!-- Sección de texto -->
+        <div class="text-section">
+            <h2>Our Flooring Services</h2>
+            <p>Transform your space with expert flooring installation and renovation! Our team specializes in high-quality flooring solutions, ensuring durability, style, and functionality for residential and commercial properties.</p>
+        </div>
 
+        <!-- Sección del slider -->
+        <div class="slider-section">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/proces2.jpeg" alt="Investment Property 3">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/proces3.jpeg" alt="Investment Property 1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/process1.jpeg" alt="Investment Property 2">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/process4.jpeg" alt="Investment Property 3">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/process5.jpeg" alt="Investment Property 3">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/process6.jpeg" alt="Investment Property 3">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/process7.jpeg" alt="Investment Property 3">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/process8.jpeg" alt="Investment Property 3">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="images/process9.jpeg" alt="Investment Property 3">
+                    </div>
+                </div>
+                <!-- Botones de navegación -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+
+   
 
     <footer class="footer">
         <div class="footer-container">
@@ -50,9 +103,9 @@
             <div class="footer-links">
                 <h3>SERVICES</h3>
                 <ul>
-                    <li><a href="#">Framing</a></li>
-                    <li><a href="#">Flooring</a></li>
-                    <li><a href="#">Painting</a></li>
+                    <li><a href="framing.html">Framing</a></li>
+                    <li><a href="flooring.html">Flooring</a></li>
+                    <li><a href="Painting.html">Painting</a></li>
                 </ul>
             </div>
             <div class="footer-contact">
@@ -67,4 +120,9 @@
             <p>&copy; 2025 Guzman General Construction. All Rights Reserved.</p>
         </div>
     </footer>
-    
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    </body>
+    </html>
